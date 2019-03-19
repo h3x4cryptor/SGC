@@ -12,7 +12,8 @@ if ($conn->connect_error) {
 }  ?>
 
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="https://ipool.remotewebaccess.com/wp-content/uploads/jquery-3.3.1.min.js"></script>
@@ -24,11 +25,6 @@ if ($conn->connect_error) {
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-<title>SunbulahGroup | Sales Portal</title>
-
-
 
 
 
@@ -57,6 +53,7 @@ addToHomescreen({
 <!-- Add to Homescreen -->
 
 
+<title>SunbulahGroup | Sales Portal</title>
 
 </head>
 <body>
