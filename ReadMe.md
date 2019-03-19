@@ -16,5 +16,6 @@ then enter your SSH connection creds:
 ./generate.sh
 ```
 
+On server run:
 
 download as zip file
