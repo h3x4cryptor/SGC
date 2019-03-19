@@ -14,7 +14,7 @@ if(isset($_POST['add-saleman-button'])) {
 
    //Error handling
     if (empty($salemanname) || empty($salemanid) ||  empty($email) || empty($pass) || empty($cpass)) {
-        header("Location: ./inc/404.php?signup=empty");
+        header("Location: ../inc/404.php?signup=empty");
         $msg = "error..!";
         exit();
     } else {
