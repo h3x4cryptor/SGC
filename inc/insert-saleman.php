@@ -21,10 +21,6 @@ if(isset($_POST['add-saleman-button'])) {
         if (!preg_match("/^[a-zA-Z]*$/", $salemanid)) {
             header("Location: ../inc/404.php?add-saleman=invalid");
             exit();
-        } else {
-            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                header("Location: ../inc/404.php?add-saleman=email-err");
-                exit();
             } else {
                 $sql = "SELECT * FROM salesmen WHERE salemanid='$salemanid'";
                 $result = $conn->query($sql);
