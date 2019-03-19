@@ -1,5 +1,3 @@
-<?php echo "Hello php"; ?>
-
 <?php $dserver = "localhost";
 $duser = "root";
 $dpassword = "Qcard420";
@@ -60,7 +58,7 @@ addToHomescreen({
 
 </head>
 <body>
-<p>Hello</p>
+
 
 
 </body>

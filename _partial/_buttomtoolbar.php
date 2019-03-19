@@ -9,7 +9,7 @@
                         </a>
                     </div>
                     <div class="left">
-                        <a class="link icon-only" href=./pages/"MyOWN.php">
+                        <a class="link icon-only" href="../saleman/111000/">
                             <i class="icon f7-icons material-icons ios-only">info<span class="badge color-red"></span></i>
                         </a>
                     </div>
