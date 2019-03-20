@@ -2,13 +2,13 @@
 
 $db_host = "localhost";
 $db_user = "root";
-$db_pass = "kopi";
-$db_name = "pesbuk";
+$db_pass = "Qcard420";
+$db_name = "SGDB";
 
 try {    
     //create PDO connection 
     $db = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
 } catch(PDOException $e) {
     //show error
-    die("Terjadi masalah: " . $e->getMessage());
+    die("Connetion error. " . $e->getMessage());
 }
