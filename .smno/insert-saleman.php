@@ -6,7 +6,7 @@ if(isset($_POST['add-saleman-button'])) {
     $salemanname = $conn->real_escape_string($_POST['salemanname']);
     $salemanid = $conn->real_escape_string($_POST['salemanid']);
     $dep = $conn->real_escape_string($_POST['dep']);
-    $role = $conn->real_escape_string($_POST['role']);
+    $jtitle = $conn->real_escape_string($_POST['jtitle']);
     $email = $conn->real_escape_string($_POST['email']);
     $phonenumber = $conn->real_escape_string($_POST['phonenumber']);
     $pass = $conn->real_escape_string($_POST['pass']);
