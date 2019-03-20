@@ -8,7 +8,7 @@
 	</head>
 	<body style="background-color:black" class="is-preload">
 <center>
-<i style="color:white" class="icon fa fa-plus"> <h3>Add Saleman:</h3></i>
+<i style="color:white" class="icon fa fa-plus"> <h3 style="color:white" >Add Saleman:</h3></i>
         <form method="POST" action="./insert-saleman.php">
             <br />
             <input class="form-control" minlength="3" type="text" class="input" name="salemanname" placeholder="Full Name..." /><br />
