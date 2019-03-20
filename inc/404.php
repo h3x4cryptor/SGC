@@ -1,1 +1,3 @@
-<?php echo "there was an Error..."?>
+<?php echo "there was an Error...";
+
+echo '$msg';

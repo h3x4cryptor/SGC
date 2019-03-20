@@ -18,7 +18,7 @@ if(isset($_POST['add-saleman-button'])) {
         $msg = "error..!";
         exit();
     } else {
-        if (!preg_match("/^[a-zA-Z]*$/", $salemanid)) {
+        if (!preg_match("/^[a-z]*$/", $salemanname)) {
             header("Location: ../inc/404.php?add-saleman=invalid");
             exit();
         } else {
@@ -33,7 +33,6 @@ if(isset($_POST['add-saleman-button'])) {
                     header("Location: ../inc/404.php?add-saleman=already-exist");
                     exit();
                 } else {
-                    
                     $hashedPwd = $conn->real_escape_string(password_hash($pass, PASSWORD_BCRYPT));
                     $salt = $conn->real_escape_string(mcrypt_create_iv(22, MCRYPT_DEV_URANDOM));
                     $salt = $conn->real_escape_string(base64_encode($salt));
@@ -52,7 +51,7 @@ if(isset($_POST['add-saleman-button'])) {
                     $session    = session_id();
                     $time       = time();
                     $time_check = $time-600;     //We Have Set Time 5 Minutes
-                    header("Location: ../inc/404.php?add-saleman=🔐success");
+                    header("Location: index.phpn=success");
                     exit();
 
                         }
