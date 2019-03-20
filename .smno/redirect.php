@@ -16,7 +16,7 @@ if(isset($_POST['loginsmno'])) {
             exit();
         } else {
             if ($row = mysqli_fetch_assoc($result)) {
-                $hashedPwdCheck = password_verify($hashedPwd, $row['pass']);
+                $hashedPwdCheck = password_verify($pass, $row['hashedPwd']);
                 if ($hashedPwdCheck == false) {
                 header("Location: ../inc/404.php?login=error2");
                 exit();

@@ -9,7 +9,7 @@
 	<body style="background-color:black" class="is-preload">
 <center>
 <h3 style="color:white" >Add Saleman:</h3>
-        <form method="POST" action="./insert-saleman.php">
+        <form method="POST" action="insert-saleman.php">
             <br />
             <input class="form-control" minlength="3" type="text" class="input" name="salemanname" placeholder="Full Name..." /><br />
             <input class="form-control" minlength="3" type="number" class="input" name="salemanid" placeholder="Employee ID#" /><br />

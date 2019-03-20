@@ -2,7 +2,7 @@
 if(isset($_POST['loginsmno'])) {
     include_once 'db.php';
     $salemanid = $conn->real_escape_string($_POST['salemanid']);
-    $salemanpwd =  $conn->real_escape_string($_POST['salemanpwd']);
+    $salemanpwd =  $conn->real_escape_string($_POST['pass']);
     
 
     if (empty($salemanid) {
@@ -14,13 +14,13 @@ if(isset($_POST['loginsmno'])) {
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
         if ($resultCheck < 1)  {       
-            header("Location: ./index.php?login=error");
+            header("Location: ./index.php?login=error1");
             exit();
         } else {
             if ($row = mysqli_fetch_assoc($result)) {
-                $hashedPwdCheck = password_verify($pass, $row['salemanpwd']);
+                $hashedPwdCheck = password_verify($pass, $row['hashedPwd']);
                 if ($hashedPwdCheck == false) {
-                header("Location: ./index.php?login=error");
+                header("Location: ./index.php?login=error2");
                 exit();
             } elseif ($hashedPwdCheck == true) {
                 session_start();

@@ -14,7 +14,7 @@
 <h3 style="color:white"> Sunbulah Group Sales Portal</h3>
 
 <center>
-			<form method="POST" action="./redirect.php">
+			<form method="POST" action="redirect.php">
 				<br />
 				<input minlength="4" type="number" class="input" name="salemanid" placeholder="Enter Saleman ID#" />
 
