@@ -9,12 +9,12 @@
 	<body class="is-preload">
 
 <h3><i class="icon fa fa-plus"> Add Saleman:</h3></i>
-        <form method="POST" action="../inc/insert-saleman.php">
+        <form method="POST" action="./insert-saleman.php">
             <br />
             <input class="form-control" minlength="3" type="text" class="input" name="salemanname" placeholder="Full Name..." /><br />
             <input class="form-control" minlength="3" type="text" class="input" name="salemanid" placeholder="Employee ID#" /><br />
             <input class="form-control" minlength="3" type="text" class="input" name="dep" placeholder="Department..." /><br />
-            <input class="form-control" minlength="3" type="text" class="input" name="role" placeholder="Job Title..." /><br />
+            <input class="form-control" minlength="3" type="text" class="input" name="jtitle" placeholder="Job Title..." /><br />
             <input class="form-control" minlength="3" type="email" class="input" name="email" placeholder="example@sunbulahgroup.com" /><br />
             <input class="form-control" minlength="3" type="text" class="input" name="phonenumber" placeholder="+9665xxxxxxx" /><br />
             <input class="form-control" minlength="3" type="password" class="input" name="pass" placeholder="Password..." /><br />

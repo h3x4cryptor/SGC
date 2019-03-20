@@ -16,10 +16,10 @@
 <i style="padding-left:14px" class="icon fa fa-lock"><span> Sunbulah Group Sales Portal</span></i>
 
 <center>
-			<form method="POST" action="../inc/redirect.php">
+			<form method="POST" action="./redirect.php">
 				<br />
 				<input minlength="4" type="text" class="input" name="salemanid" placeholder="Enter Saleman ID#" />
-				<input minlength="4" type="password" class="input" name="salemanpwd" placeholder="Password" />
+				<input minlength="4" type="password" class="input" name="pass" placeholder="Password" />
 				
 				<br />
 				<br />

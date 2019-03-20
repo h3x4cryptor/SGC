@@ -3,7 +3,7 @@ $duser = "root";
 $dpassword = "Qcard420";
 $db = "SGDB";
 // Create connection
-$conn = new mysqli($dserver, $duser, $dpassword);
+$conn = new mysqli($dserver, $duser, $dpassword, $db);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
