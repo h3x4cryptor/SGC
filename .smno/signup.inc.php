@@ -52,11 +52,11 @@ if(isset($_POST['registerbutton'])) {
                     header("Location: ./dashboard.php?signup=@🔐success");
                     exit();
 
+                            }
                         }
                     }
                 }
-            }
-        } else {
+            } else {
     header("Location: register.php");
     exit();
 
