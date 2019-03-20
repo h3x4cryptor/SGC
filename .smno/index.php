@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body style="background-color:gray" class="is-preload">
+	<body style="background-color:black" class="is-preload">
 
 <center><i style="color:green" class="icon fa fa-lock"></i>
 <br />
@@ -16,7 +16,7 @@
 <center>
 			<form method="POST" action="./redirect.php">
 				<br />
-				<input minlength="4" type="text" class="input" name="salemanid" placeholder="Enter Saleman ID#" />
+				<input minlength="4" type="number" class="input" name="salemanid" placeholder="Enter Saleman ID#" />
 
 <br />
 				<input minlength="4" type="password" class="input" name="pass" placeholder="Password" />
