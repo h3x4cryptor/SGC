@@ -2,8 +2,8 @@
 
 $db_host = "localhost";
 $db_user = "root";
-$db_pass = "kopi";
-$db_name = "pesbuk";
+$db_pass = "Qcard420";
+$db_name = "SGDB";
 
 try {    
     //create PDO connection 
