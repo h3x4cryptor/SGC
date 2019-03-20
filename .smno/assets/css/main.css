@@ -1533,12 +1533,13 @@ input, select, textarea {
 		background: #fff;
 		color: #bbb;
 		box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025);
-		width: 100%;
+		width: 60%;
 	}
 
 		form input[type=text]:focus,
 		form input[type=email]:focus,
 		form input[type=password]:focus,
+		form input[type=number]:focus,
 		form select:focus,
 		form textarea:focus {
 			background: #fafafa;
@@ -1689,7 +1690,7 @@ input, select, textarea {
 		background-color: #43B3E0;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
-		max-width: 24em;
+		max-width: 60%;
 	}
 
 		input[type="button"]:hover,

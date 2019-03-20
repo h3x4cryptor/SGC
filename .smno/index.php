@@ -1,24 +1,24 @@
 <!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Miniport by HTML5 UP</title>
+		<title>Sunbula Group Portal</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="is-preload">
+	<body style="background-color:gray" class="is-preload">
 
-<i style="padding-left:14px" class="icon fa fa-lock"><span> Sunbulah Group Sales Portal</span></i>
+<center><i style="color:green" class="icon fa fa-lock"></i>
+<br />
+<br />
+<h3 style="color:white"> Sunbulah Group Sales Portal</h3>
 
 <center>
 			<form method="POST" action="./redirect.php">
 				<br />
 				<input minlength="4" type="text" class="input" name="salemanid" placeholder="Enter Saleman ID#" />
+
+<br />
 				<input minlength="4" type="password" class="input" name="pass" placeholder="Password" />
 				
 				<br />
