@@ -15,7 +15,7 @@
     <input class="form-control" type="email" class="input" name="email" placeholder="example@sunbulahgroup.com" /><br />
     <input class="form-control" type="text" class="input" name="phonenumber" placeholder="05xxxxxxxx" /><br />
     <input class="form-control" type="password" class="input" name="pass" placeholder="Password..." /><br />
-    <input class="btn btn-primary" type="submit" value="Register" name="request"/>
+    <input class="btn btn-primary" type="submit" value="Register" name="registerbutton"/>
     </form>
 
 </body>
