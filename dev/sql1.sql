@@ -131,14 +131,15 @@ ENGINE = InnoDB;
     CREATE TABLE IF NOT EXISTS `salesmen` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `salemanname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `salemanid` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `dep` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `salemanid` varchar(255) COLLATE utf8_unicode_ci NULL,
+  `dep` varchar(255) COLLATE utf8_unicode_ci NULL,
   `jtitle` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `phonenumber` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `hashedPwd` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `salt` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `created_on` timestamp NOT NULL,
+  `created_on` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=8 ;
 
