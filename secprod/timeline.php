@@ -13,6 +13,7 @@ session_start();
 <body class="bg-light">
 <div class="container mt-5">
     <div class="row">
+
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body text-center">
@@ -20,6 +21,11 @@ session_start();
                     <h3><?php echo  $_SESSION['salemanname']; ?></h3>
                     <p>ID# <?php echo $_SESSION['salemanid']; ?></p>
                     <p><a href="logout.php">Logout</a></p>
+                    <form action="upload.php" method="post">
+                    Select image to upload:
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <input type="submit" value="Upload Image" name="upload">
+                    </form>
                 </div>
             </div>            
         </div>

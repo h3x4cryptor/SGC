@@ -19,7 +19,7 @@ include "dbconnect.php";
     }
 //**Product creation. */
     if(isset($_POST['createproduct'])) {
-            $sql="INSERT INTO products (materialnumber, productname, producttype, chk, qty, free, price, sku) VALUES ('$_POST[materialnumber]','$_POST[productname]','$_POST[producttype]','$_POST[chk]','$_POST[qty]','$_POST[free]','$_POST[price]','$_POST[sku]')";
+            $sql="INSERT INTO products (materialnumber, productname, producttype, price, sku) VALUES ('$_POST[materialnumber]','$_POST[productname]','$_POST[producttype]','$_POST[price]','$_POST[sku]')";
             if ($conn->query($sql) === TRUE) {
                 header("Location: products.php");
             } else {
