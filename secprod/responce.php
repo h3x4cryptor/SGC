@@ -1,29 +1,23 @@
 <?php
-$servername = "localhost";
-$dbuser = "root";
-$dbpass = "Qcard420";
-$dbname = "sgdb0";
+include "dbconnect.php";
 
-// Create connection
-$conn = new mysqli($servername, $dbuser, $dbpass, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
+//**Register new employee. */
     if(isset($_POST['request'])) {
             $pass = $_POST['pwd'];
             $hashedPwd = password_hash($pass, PASSWORD_BCRYPT);
             $salt = MD5($hashedPwd);
+            $sql = "SELECT * FROM salesmen WHERE salemanid = '$salemanid'"; 
+            $result = mysqli_query($conn, $sql);
+            if (mysqli_num_rows($result) > 0) {
+                $email_error = "Sorry... email already taken"; 	
+            } else {
             $sql="INSERT INTO salesmen (salemanname, salemanid, dep, jtitle, email, phonenumber, hashedPwd, salt) VALUES ('$_POST[salemanname]','$_POST[salemanid]','$_POST[dep]','$_POST[jtitle]','$_POST[email]','$_POST[phonenumber]','$hashedPwd','$salt')";
             if ($conn->query($sql) === TRUE) {
                 header("Location: success.php");
-            } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
-            }
-
+            } 
         }
-
+    }
+//**Product creation. */
     if(isset($_POST['createproduct'])) {
             $sql="INSERT INTO products (materialnumber, productname, producttype, chk, qty, free, price, sku) VALUES ('$_POST[materialnumber]','$_POST[productname]','$_POST[producttype]','$_POST[chk]','$_POST[qty]','$_POST[free]','$_POST[price]','$_POST[sku]')";
             if ($conn->query($sql) === TRUE) {
@@ -33,7 +27,7 @@ if ($conn->connect_error) {
             }
         }
 
-
+//**Login check and redirect to timeline. */
         if(isset($_POST['login'])) {
 
             $salemanid =  $conn->real_escape_string($_POST['salemanid']);
@@ -60,9 +54,9 @@ if ($conn->connect_error) {
                         $_SESSION["salemanid"] = $row['salemanid'];
                         $_SESSION["salemanname"] = $row['salemanname'];
                         $_SESSION["email"] = $row['email'];
-                        $_SESSION["[phonenumber]"] = $row['phonenumber'];
-                        $logged_in = 1;
-        
+                        $_SESSION["phonenumber"] = $row['phonenumber'];
+                        $_SESSION["photo"] = $row['photo'];
+                        $logged_in = 1;   
                         $session    = session_id();
                         $time       = time();
                         $time_check = $time-600;     //We Have Set Time 5 Minutes
@@ -72,9 +66,7 @@ if ($conn->connect_error) {
                 }
             }
         }
-
     }
-
 $conn->close();
 
 

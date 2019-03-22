@@ -24,12 +24,14 @@
             </div>
         </div>
     </header>
+    <br />
+    <br />
 
     <section>
         <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <img class="img img-responsive" src="img/connect.png" />
+                        <center><img class="img img-responsive" src="img/sgn.jpg" /></center>
                     </div>
                 </div>
             </div>

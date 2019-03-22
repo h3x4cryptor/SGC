@@ -1,17 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "Qcard420";
-$dbname = "sgdb0";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-
+include "dbconnect.php";
 $sql = "CREATE TABLE IF NOT EXISTS `products` (
     `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
     `materialnumber` varchar(255) COLLATE utf8_unicode_ci NOT NULL,

@@ -138,6 +138,7 @@ ENGINE = InnoDB;
   `phonenumber` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `hashedPwd` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `salt` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `photo` varchar(255) NOT NULL DEFAULT 'default.svg',
   `created_on` timestamp NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=8 ;

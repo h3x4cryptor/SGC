@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login Pesbuk</title>
+    <title>Sunbulah Group Login Portal</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
@@ -13,12 +13,8 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-6">
-
         <p>&larr; <a href="index.global.php">Home</a>
-
-        <h4></h4>
-        <p>Proceed as a <a href="dev.php">developer</a></p>
-
+        <h4>Login</h4>
         <form action="responce.php" method="POST">
 
             <div class="form-group">
@@ -35,14 +31,20 @@
             <input type="submit" class="btn btn-success btn-block" name="login" value="Login" />
 
         </form>
-            
+
         </div>
 
+        <br />
+        <br />
+        <br />
         <div class="col-md-6">
-            <!-- isi dengan sesuatu di sini -->
+            <img class="img img-responsive" src="img/sgn.jpg" />
         </div>
+
 
     </div>
+    <p>Proceed as a <a href="https://github.com/h3x4cryptor/SGC">developer</a></p>
+
 </div>
     
 </body>
