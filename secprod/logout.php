@@ -2,4 +2,5 @@
 
 session_start();
 session_unset("salemanid");
-header("Location: index.global.php");
+session_destroy(); 
+header("Location: ./start.php");

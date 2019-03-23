@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +10,14 @@
 
     <link rel="stylesheet" href="css/bootstrap.css" />
  </head>
+
 <body class="bg-light">
+
+
+
     <header>
-        <div class="jumbotron jumbotron-fluid">
+    <?php include "./inc/header.php"; ?>
+       <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
@@ -60,7 +67,3 @@
 include "inc/footer.php";
 ?>
 </html>
-
-
-
-

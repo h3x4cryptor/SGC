@@ -10,7 +10,9 @@
 
 </head>
 <body class="bg-light">
+
     <header>
+    <?php include "./inc/header.php"; ?>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div class="row">

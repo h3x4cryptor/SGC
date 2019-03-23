@@ -1,6 +1,3 @@
-<?php require_once("dbconnect.php"); 
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +8,7 @@ session_start();
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
 <body class="bg-light">
-
+<?php include "./inc/header.php"; ?>
 <header>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
@@ -49,7 +46,7 @@ session_start();
             </div>            
         </div>
         <div class="col-md-8">
-            <form action="" method="post" />
+            <form action="" method="post">
                 <div class="form-group">
                     <!--<textarea class="form-control" placeholder="Whats Up ?"></textarea>-->
                 </div>
@@ -70,8 +67,12 @@ session_start();
 </body>
 <br />
 <br />
-
+<center>
 <?php
 include "inc/footer.php";
 ?>
+</center>
 </html>
+<?php include "./inc/access-top.php"; ?>
+
+<?php include "./inc/access-bottom.php"; ?>
