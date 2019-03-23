@@ -46,6 +46,12 @@
     <p>Proceed as a <a href="https://github.com/h3x4cryptor/SGC">developer</a></p>
 
 </div>
+
+
     
 </body>
+
+
+<?php include "./inc/footer.php"; ?>
+
 </html>
