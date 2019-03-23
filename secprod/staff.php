@@ -52,6 +52,13 @@
     </section>
 
 </body>
+
+<br />
+<br />
+
+<?php
+include "inc/footer.php";
+?>
 </html>
 
 

@@ -87,4 +87,11 @@ function myFunction() {
 }
 </script>
 </body>
+
+<br />
+<br />
+
+<?php
+include "inc/footer.php";
+?>
 </html>

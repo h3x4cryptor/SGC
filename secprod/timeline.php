@@ -7,10 +7,29 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sunbulah Group Timeline</title>
+    <title>Sunbulah Group | Staff Timeline</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
 <body class="bg-light">
+
+<header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <i class="fa-fa-tachometer"></i><h3>Staff Timeline</h3>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <!--<a href="start.php" class="btn btn-primary">Start</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
 <div class="container mt-5">
     <div class="row">
 
@@ -32,7 +51,7 @@ session_start();
         <div class="col-md-8">
             <form action="" method="post" />
                 <div class="form-group">
-                    <textarea class="form-control" placeholder="Whats Up ?"></textarea>
+                    <!--<textarea class="form-control" placeholder="Whats Up ?"></textarea>-->
                 </div>
             </form>
 
@@ -49,4 +68,10 @@ session_start();
     </div>
 </div>
 </body>
+<br />
+<br />
+
+<?php
+include "inc/footer.php";
+?>
 </html>

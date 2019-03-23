@@ -161,7 +161,7 @@ input[type="text"] {
 <header>
 <br />
 <div style="background-color:black;color:white">
-<span style="font-size:24px;padding-left:20px;">Sunbulah Group</span><span style="float:right;padding-right:20px;"><p><a class="btn btn-danger" href="logout.php">Logout</a></p></span>
+<span style="font-size:24px;padding-left:20px;"><a href="./timeline.php">Sunbulah Group</a></span><span style="float:right;padding-right:20px;"><p><a class="btn btn-danger" href="logout.php">Logout</a></p></span>
 <br /> 
 </div>
 <div class="row">
@@ -752,4 +752,15 @@ function myFunction() {
 
 
 </body>
+
+
+
+<br />
+<br />
+
+<?php
+include "inc/footer.php";
+?>
+
+
 </html>
