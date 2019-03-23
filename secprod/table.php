@@ -25,7 +25,7 @@
 
 function table( $result ) {
     $result->fetch_array( MYSQLI_ASSOC );
-    echo '<table>';
+    echo '<table id="myTable">';
     tableHead( $result );
     tableBody( $result );
     echo '</table>';

@@ -21,11 +21,11 @@ session_start();
                     <h3><?php echo  $_SESSION['salemanname']; ?></h3>
                     <p>ID# <?php echo $_SESSION['salemanid']; ?></p>
                     <p><a href="logout.php">Logout</a></p>
-                    <form action="upload.php" method="post">
+                    <!--<form action="upload.php" method="post">
                     Select image to upload:
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input type="submit" value="Upload Image" name="upload">
-                    </form>
+                    </form>-->
                 </div>
             </div>            
         </div>
@@ -35,13 +35,16 @@ session_start();
                     <textarea class="form-control" placeholder="Whats Up ?"></textarea>
                 </div>
             </form>
-            <?php for($i=0; $i < 6; $i++){ ?>
-            <div class="card mb-3">
-                <div class="card-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veritatis nemo ad recusandae labore nihil iure qui eum consequatur, officiis facere quis sunt tempora impedit ullam reprehenderit facilis ex amet!
-                </div>
-            </div>
-            <?php } ?>           
+
+            <h4>Services</h4>
+        <ol>
+        <li><a href="./urgent.php">Create <span style="color:red">Urgent</span> PO.</a></li>
+        <li><a href="./regular.php">Create Regular PO.</a></li>
+        <li><a href="./export.php">Export Reports.  </a><span style="font-size:12px;">Supported formats:  <span style="color: gray; font-size:10px;"><b>[Excel Sheets][PDF]</b></span></span></li>
+        <li><a href="./products.php">Search Products List.</a></li>
+        
+        </ol>
+                 
         </div>   
     </div>
 </div>
