@@ -13,7 +13,7 @@ include "dbconnect.php";
             } else {
             $sql="INSERT INTO salesmen (salemanname, salemanid, dep, jtitle, email, phonenumber, hashedPwd, salt) VALUES ('$_POST[salemanname]','$_POST[salemanid]','$_POST[dep]','$_POST[jtitle]','$_POST[email]','$_POST[phonenumber]','$hashedPwd','$salt')";
             if ($conn->query($sql) === TRUE) {
-                header("Location: success.php");
+                header("Location: timeline.php");
             } 
         }
     }
