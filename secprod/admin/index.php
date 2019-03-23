@@ -41,6 +41,16 @@ session_start();
                         <li><a href="../staff.php">List all active staff members in DB url(../staff.php)</a></li>
                         <li><a href="../urgent.php">Create urgent PO form (test) in DB url(../urgent.php)</a></li>
                         <li><a href="../urgent-po-created.php">List all urgent PO's in DB url(../urgent-po-created.php)</a></li>
+
+			</ul>
+			<h6 stule="padding-left:60px">-DB Creation</h6>
+			<ul style="font-size:12px;">
+
+                        <li><a href="../create-table-salesmen.php">Create new salesmen table IF not exist in DB url(../create-table-salesmen.php)</a></li>
+                        <li><a href="../create-table-products.php">Create new products table IF not exist in DB url(../create-table-products.php)</a></li>
+                        <li><a href="../create-table-items.php">Create new items table IF not exist in DB url(../create-table-items.php)</a></li>
+                        <li><a href="../create-table-urgent.php">Create new urgent table IF not exist in DB url(../create-table-urgent.php)</a></li>
+
                         <li></li>
                         </ul>
                     </div>
