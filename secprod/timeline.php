@@ -36,7 +36,7 @@
                     <img class="img img-responsive rounded-circle mb-3" width="160" src="img/<?php echo $_SESSION['photo'] ?>" />
                     <h3><?php echo  $_SESSION['salemanname']; ?></h3>
                     <p>ID# <?php echo $_SESSION['salemanid']; ?></p>
-                    <p><a href="logout.php">Logout</a></p>
+                    <p><a class="btn btn-danger btn-block" href="logout.php">Logout</a></p>
                     <!--<form action="upload.php" method="post">
                     Select image to upload:
                     <input type="file" name="fileToUpload" id="fileToUpload">
@@ -69,7 +69,7 @@
 <br />
 <center>
 <?php
-include "inc/footer.php";
+include "./inc/footer.php";
 ?>
 </center>
 </html>

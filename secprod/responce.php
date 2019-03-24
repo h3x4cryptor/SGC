@@ -60,6 +60,9 @@ include "dbconnect.php";
                         $session    = session_id();
                         $time       = time();
                         $time_check = $time-600;     //We Have Set Time 5 Minutes
+                        $cookie_name = "salemanid";
+                        $cookie_value = $_SESSION['salemanname'];
+                        setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
                         header("Location: ./timeline.php?login=🔐success");
                         exit();                
                    }
