@@ -9,11 +9,23 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sunbulah Group | Administrators Portal</title>
      <link rel="stylesheet" href="../css/bootstrap.css" />
+     <style>
+.header {
+
+    font-family: "Times New Roman", Times, serif;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: black;
+}
+</style>
 </head>
 <body class="bg-light">
     <header>
-    <?php include "../inc/header.php"; ?>
-
+    <div class="header">
+    <header>
+        <a style="color:white;" href="../index.global.php"><h3 style="padding-left:25px;">Sunbulah Group</h3></a>
+    </header>
+</div>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div class="row">
