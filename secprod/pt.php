@@ -129,7 +129,7 @@ input[type="text"] {
                     <textarea class="form-control" placeholder="Whats Up ?"></textarea>
                 </div>
             </form> -->
-            <form action="make.php" method="POST">
+            <form action="commit-urgent.php" method="POST">
         </div>
 <div class="input-group">
   <span style="padding-left:20px;" class="input-group-addon">PO#</span>
@@ -167,8 +167,12 @@ input[type="text"] {
         </tr>
         <tr>
         </tr>
+
     </tfoot>
+
 </table>
+<center><?php     echo '<input type="submit" class="btn btn-success" id="submit" name="make" value="Submit" /></form>'; ?></center>
+</form>
 </div>
 
 
@@ -176,9 +180,6 @@ input[type="text"] {
 
 
                 </div>
-                <?php     echo '<input type="submit" class="btn btn-success" id="submit" name="make" value="Submit" /></form>';
-?>
-            </form>
 
             <!--<h4>Services</h4>
         <ol>
@@ -206,10 +207,10 @@ $(document).ready(function () {
     $("#addrow").on("click", function () {
         var newRow = $("<tr>");
         var cols = "";
-        cols += '<td><form action="make.php" method="post"><select class="form-control" width="280px"><option value="saaoooooooooooooooob">Sjjjjjjjjjjjjjlllllllllllllllllllllllaab</option><option value="mercedes">Mercedes</option><option value="audi">Audikkkkkkkkkkkkkkkkkkkkkkkkkkkffffffffffffffffffffffffffffffffffffffff</option></select></td>';
-        cols += '<td><input type="number" class="form-control" name="qty' + counter + '"/></td>';
-        cols += '<td><input type="number" class="form-control" name="free' + counter + '"/></td>';
-        cols += '<td><input type="number" class="form-control" name="price' + counter + '"/></td>';
+        cols += '<td><select style="font-size:8px" class="form-control" name="order" width="280px"><option style="font-size:8px" value="#">--Select Item--</option><option style="font-size:8px" value="59009212">Sunbula Spring Roll(12X240G)</option><option value="56040036">Al-Shifa Honey Sachets(7Gx12x24)</option><option style="font-size:8px" value="56040136">Al-Shifa Honey Sachets(7GX24X12)</option></select></td>';
+        cols += '<td><input width="20px" type="number" class="form-control" name="qty' + counter + '"/></td>'
+        cols += '<td><input width="20px" type="number" class="form-control" name="free' + counter + '"/></td>';
+        cols += '<td><input width="20px" type="number" class="form-control" name="price' + counter + '"/></td>';
 
         cols += '<td data-role="listview"><input type="button" class="ibtnDel btn btn-small btn-danger "  value="Delete"></td>';
         newRow.append(cols);
