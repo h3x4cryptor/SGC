@@ -91,7 +91,6 @@ foreach( $a as $as => $array ) {
 
 
 
-
  $insert = [array(po => "405998988", branch => "303888", salemanid => "1711", array(materialnumber => "46046009", productname => "ALSHIFA HONEY SCETCHES 180Gx24", qty => "4", free => "0", price => "0", sku => "9999")) ];
 
  print_r($insert);
@@ -438,9 +437,9 @@ print_r($records);
     }
     echo '<br />';
     $data = array(
-        [0] => array("000033333", "40958987", "303888", "56060506", "3333"),
-        [1] => array("000033334", "40958988", "303889", "56060507", "4444"),
-        [2] => array("000033335", "40958989", "303890", "56060508", "5555")
+        "000033333" => array("000033333", "40958987", "303888", "56060506", "3333"),
+        "000033334" => array("000033334", "40958988", "303889", "56060507", "4444"),
+        "000033335" => array("000033335", "40958989", "303890", "56060508", "5555")
     );
     print_r($data);
     if(is_array($data)){
@@ -456,6 +455,32 @@ print_r($records);
 
     echo '<br />';
 
+
+
+    echo '<br />';
+
+
+
+echo "<h2>YOU ARE HERE</h2>";
+
+ $resultStrings = $multiArray;
+ foreach ($array as $key => $values) {
+    $subarrayString = "('$key','" . implode($values, "','") . "')";
+    $resultStrings[] = $subarrayString;
+ }
+
+ $result = implode($resultStrings, ",");
+
+    echo '<br />';
+    echo "<h2>YOU ARE HERE</h2>";
+ $resultStrings = array(1, 2 ,3);
+ foreach ($array as $key => $values) {
+    $subarrayString = "('$key','" . implode($values, "','") . "')";
+    $resultStrings[] = $subarrayString;
+ }
+ $result = implode($resultStrings, ",");
+
+    echo '<br />';
 
 
     echo '<br />';
@@ -480,6 +505,19 @@ print_r($records);
 
 
     echo '<br />';
+
+
+
+echo "<h2>YOU ARE HERE</h2>";
+
+ $resultStrings = $multiArray;
+ foreach ($array as $key => $values) {
+    $subarrayString = "('$key','" . implode($values, "','") . "')";
+    $resultStrings[] = $subarrayString;
+ }
+
+ $result = implode($resultStrings, ",");
+
 
 
 
