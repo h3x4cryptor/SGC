@@ -40,3 +40,49 @@
  }
 
 </style>
+
+
+
+<?php
+
+
+
+$array = array([
+  po => 'sale',
+  branch => 'sale',
+  salemanid => 'sale',     
+  array([materialnumber => 'sale',
+  productname => 'product',
+  qty => 'test',
+  free => 'test',
+  price => 'test',
+  sku => 'sku'))]] ;
+  print_r( $array );
+
+
+$insert = array([
+  po => $_POST['po'],
+  branch => $_POST['branch'],
+  salemanid => $_POST['salemanid'],
+
+  array([materialnumber => $_POST['materialnumber'],
+  productname => $_POST['productname'],
+  qty => $_POST['qty'],
+  free => $_POST['free'],
+  price => $_POST['price'],
+  sku => $_POST['sku'])) ;
+
+
+
+
+
+
+
+    // Loop through Object
+    $someObject = ...; // Replace ... with your PHP Object
+    foreach($someObject as $key => $value) {
+      echo $value->po . ", " . $value->qty . "<br>";
+    }
+
+    
+?>
